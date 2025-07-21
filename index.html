@@ -1,182 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
+  <meta charset="UTF-8">
+  <title>CAUTOR, UAB</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+    .part {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 40px;
+      margin: 40px auto;
+      max-width: 1100px;
+      transition: 0.3s;
+    }
+
+    .part:hover {
+      transform: scale(1.01);
+    }
+
+    .part img {
+      width: 45%;
+      border-radius: 10px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #0d6efd;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 60px;
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="part">
+  <img src="https://img.money.com/2022/05/News-Corporate-monopolies-inflation-worse.jpg?quality=85" alt="Image 1">
+  <div class="text">
+    <h2>Retail & Supply Strategy</h2>
+    <p>CAUTOR, UAB ensures market-ready solutions in food and beverage retail, delivering competitive services in fast-evolving sectors.</p>
+  </div>
+</div>
 
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
-    </div>
+<div class="part">
+  <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1HBdUr.img?w=2121&h=1414&m=4&q=86" alt="Image 2">
+  <div class="text">
+    <h2>Product Accessibility</h2>
+    <p>We provide accessible and high-quality grocery products to a wide customer base, combining modern logistics with retail innovation.</p>
+  </div>
+</div>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<div class="part">
+  <img src="https://i.ytimg.com/vi/Jhl8K8EnXi8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgSig_MA8=&rs=AOn4CLDATkw7aT_9wvPfuPrRwnzM7NdylQ" alt="Image 3">
+  <div class="text">
+    <h2>Grocery Excellence</h2>
+    <p>With a deep understanding of food retail, we focus on customer satisfaction, freshness, and sustainable practices across our stores.</p>
+  </div>
+</div>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<div class="part">
+  <img src="https://images.ctfassets.net/qr8kennq1pom/70R5rNivB9oP0RQi3KDzyk/7e77becb3897a1776b64c8c00519013e/Untitled_design__11_.png?fm=jpg&fl=progressive&q=70&w=1920" alt="Image 4">
+  <div class="text">
+    <h2>Modern Management</h2>
+    <p>We apply advanced supply chain techniques and retail systems that streamline product availability and optimize operational flow.</p>
+  </div>
+</div>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+<div class="part">
+  <img src="https://www.retail.ru/upload/medialibrary/56c/shutterstock_573179431.jpg" alt="Image 5">
+  <div class="text">
+    <h2>Get in Touch</h2>
+    <p>For inquiries or partnerships, contact us at contact@cautor.shop or call +37067949451. We're based in Kulvos Sen., Lithuania.</p>
+  </div>
+</div>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+<footer>
+  CAUTOR, UAB – Besiu K. 2 Kulvos Sen., T-55351 Lithuania<br>
+  Email: contact@cautor.shop | Phone: +37067949451
+</footer>
 
 </body>
 </html>
